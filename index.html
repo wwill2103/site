@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Botão com Texto</title>
+    <style>
+ #botao {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#textoescondido {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <button id="botao"><img src="botao.jpg" alt="Botão"></button>
+    <p id="textoescondido"></p>
+    <script>
+ const botao = document.getElementById('botao');
+const texto = document.getElementById('textoescondido');
+botao.addEventListener('click', function() {
+    texto.style.display = 'block';
+    texto.innerHTML = 'Teste';
+});
+    </script>
+</body>
+</html>
